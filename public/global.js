@@ -1,0 +1,1 @@
+var socket = io();socket.emit('host', {message: "hi i'm the host"});socket.on('back', function(data){		$(document.body).append(data.message);	console.log(data.message);});
